@@ -26,23 +26,23 @@ PRODUCT_COPY_FILES += \
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/transform/init.transform.usb.rc:root/init.transform.usb.rc \
-	device/samsung/transform/ueventd.transform.rc:root/ueventd.transform.rc
+	device/samsung/intercept/init.intercept.usb.rc:root/init.intercept.usb.rc \
+	device/samsung/intercept/ueventd.intercept.rc:root/ueventd.intercept.rc
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-  	device/samsung/transform/prebuilt/keys/melfas_ts_input.kl:system/usr/keylayout/melfas_ts_input.kl \
-	device/samsung/transform/prebuilt/keys/s3c-keypad-rev0050.kl:system/usr/keylayout/s3c-keypad-rev0050.kl \
-	device/samsung/transform/prebuilt/keys/sec_headset.kl:system/usr/keylayout/sec_headset.kl \
-	device/samsung/transform/prebuilt/keys/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-	device/samsung/transform/prebuilt/keys/qwerty.kl:system/usr/keylayout/qwerty.kl 
+  	device/samsung/intercept/prebuilt/keys/melfas_ts_input.kl:system/usr/keylayout/melfas_ts_input.kl \
+	device/samsung/intercept/prebuilt/keys/s3c-keypad-rev0050.kl:system/usr/keylayout/s3c-keypad-rev0050.kl \
+	device/samsung/intercept/prebuilt/keys/sec_headset.kl:system/usr/keylayout/sec_headset.kl \
+	device/samsung/intercept/prebuilt/keys/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+	device/samsung/intercept/prebuilt/keys/qwerty.kl:system/usr/keylayout/qwerty.kl 
 
 # Generated kcm keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/transform/prebuilt/keys/s3c-keypad-rev0050.kcm.bin:system/usr/keychars/s3c-keypad-rev0050.kcm.bin \
-	device/samsung/transform/prebuilt/keys/optjoy_device.kcm.bin:system/usr/keychars/optjoy_device.kcm.bin \
-	device/samsung/transform/prebuilt/keys/melfas_ts_input.kcm.bin:system/usr/keychars/melfas_ts_input.kcm.bin \
-	device/samsung/transform/prebuilt/keys/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin 
+	device/samsung/intercept/prebuilt/keys/s3c-keypad-rev0050.kcm.bin:system/usr/keychars/s3c-keypad-rev0050.kcm.bin \
+	device/samsung/intercept/prebuilt/keys/optjoy_device.kcm.bin:system/usr/keychars/optjoy_device.kcm.bin \
+	device/samsung/intercept/prebuilt/keys/melfas_ts_input.kcm.bin:system/usr/keychars/melfas_ts_input.kcm.bin \
+	device/samsung/intercept/prebuilt/keys/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin 
 	
 
 # Libs
@@ -78,33 +78,33 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    device/samsung/transform/prebuilt/akmd/akmd2:system/bin/akmd2
+    device/samsung/intercept/prebuilt/akmd/akmd2:system/bin/akmd2
 
 # Wifi
 PRODUCT_COPY_FILES += \
-    device/samsung/transform/prebuilt/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    device/samsung/transform/prebuilt/wifi/libwlandut.so:system/lib/libwlandut.so \
-    device/samsung/transform/prebuilt/wifi/libwlservice.so:system/lib/libwlservice.so \
-    device/samsung/transform/prebuilt/wifi/libwpa_client.so:system/lib/libwpa_client.so \
-    device/samsung/transform/prebuilt/wifi/wlservice:system/bin/wlservice \
-    device/samsung/transform/prebuilt/wifi/wpa_supplicant:system/bin/wpa_supplicant \
-    device/samsung/transform/prebuilt/wifi/wifi.conf:system/etc/wifi/wifi.conf \
-    device/samsung/transform/prebuilt/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
-    device/samsung/transform/prebuilt/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin 
+    device/samsung/intercept/prebuilt/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
+    device/samsung/intercept/prebuilt/wifi/libwlandut.so:system/lib/libwlandut.so \
+    device/samsung/intercept/prebuilt/wifi/libwlservice.so:system/lib/libwlservice.so \
+    device/samsung/intercept/prebuilt/wifi/libwpa_client.so:system/lib/libwpa_client.so \
+    device/samsung/intercept/prebuilt/wifi/wlservice:system/bin/wlservice \
+    device/samsung/intercept/prebuilt/wifi/wpa_supplicant:system/bin/wpa_supplicant \
+    device/samsung/intercept/prebuilt/wifi/wifi.conf:system/etc/wifi/wifi.conf \
+    device/samsung/intercept/prebuilt/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+    device/samsung/intercept/prebuilt/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin 
     
 #
 # CDMA data
 #
 PRODUCT_COPY_FILES += \
-    device/samsung/transform/prebuilt/data/chap-secrets:system/etc/ppp/chap-secrets \
-    device/samsung/transform/prebuilt/data/init.gprs-pppd:system/etc/init.gprs-pppd \
-    device/samsung/transform/prebuilt/data/ip-down:system/etc/ppp/ip-down \
-    device/samsung/transform/prebuilt/data/ip-down-ppp0:system/etc/ppp/ip-down-ppp0 \
-    device/samsung/transform/prebuilt/data/ip-up:system/etc/ppp/ip-up \
-    device/samsung/transform/prebuilt/data/ip-up-ppp0:system/etc/ppp/ip-up-ppp0 \
-    device/samsung/transform/prebuilt/data/ip-up-vpn:system/etc/ppp/ip-up-vpn \
-    device/samsung/transform/prebuilt/data/options:system/etc/ppp/options \
-    device/samsung/transform/prebuilt/data/pap-secrets:system/etc/ppp/pap-secrets
+    device/samsung/intercept/prebuilt/data/chap-secrets:system/etc/ppp/chap-secrets \
+    device/samsung/intercept/prebuilt/data/init.gprs-pppd:system/etc/init.gprs-pppd \
+    device/samsung/intercept/prebuilt/data/ip-down:system/etc/ppp/ip-down \
+    device/samsung/intercept/prebuilt/data/ip-down-ppp0:system/etc/ppp/ip-down-ppp0 \
+    device/samsung/intercept/prebuilt/data/ip-up:system/etc/ppp/ip-up \
+    device/samsung/intercept/prebuilt/data/ip-up-ppp0:system/etc/ppp/ip-up-ppp0 \
+    device/samsung/intercept/prebuilt/data/ip-up-vpn:system/etc/ppp/ip-up-vpn \
+    device/samsung/intercept/prebuilt/data/options:system/etc/ppp/options \
+    device/samsung/intercept/prebuilt/data/pap-secrets:system/etc/ppp/pap-secrets
 
 # VOLD
 PRODUCT_COPY_FILES += \
@@ -156,7 +156,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 
 # Kernel
-LOCAL_KERNEL := device/samsung/transform/kernel.bin
+LOCAL_KERNEL := device/samsung/intercept/kernel.bin
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
@@ -169,4 +169,4 @@ PRODUCT_COPY_FILES += \
 # half of the device-specific product definition file takes care
 # of the aspects that require proprietary drivers that aren't
 # commonly available
-$(call inherit-product-if-exists, vendor/samsung/transform/transform-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/intercept/intercept-vendor.mk)

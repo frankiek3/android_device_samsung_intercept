@@ -18,4 +18,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_transform.mk
+    $(LOCAL_DIR)/full_intercept.mk
