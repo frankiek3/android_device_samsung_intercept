@@ -1,5 +1,5 @@
 #
-# system.prop for transform
+# system.prop for intercept
 #
 dalvik.vm.dexopt-data-only=1
 rild.libpath=/system/lib/libsec-ril40.so

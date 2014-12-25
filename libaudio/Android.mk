@@ -31,6 +31,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_STATIC_LIBRARIES := libmedia_helper
 LOCAL_WHOLE_STATIC_LIBRARIES := libaudiohw_legacy
 LOCAL_SHARED_LIBRARIES:= libc libcutils libutils libmedia libhardware_legacy
+#LOCAL_SHARED_LIBRARIES += libmedia_helper
 # TODO: Fix A2DP
 #ifeq ($(BOARD_HAVE_BLUETOOTH),true)
 #  LOCAL_SHARED_LIBRARIES += liba2dp
@@ -57,6 +58,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_STATIC_LIBRARIES := libmedia_helper
 LOCAL_WHOLE_STATIC_LIBRARIES:= libaudiopolicy_legacy
 LOCAL_SHARED_LIBRARIES:= libc libcutils libutils libmedia
+#LOCAL_SHARED_LIBRARIES += libmedia_helper
 ifeq ($(BOARD_HAVE_BLUETOOTH),true)
   LOCAL_CFLAGS += -DWITH_A2DP
 endif

@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),transform)
+ifeq ($(TARGET_DEVICE),intercept)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -17,13 +17,13 @@ LOCAL_SRC_FILES:= \
 LOCAL_SHARED_LIBRARIES:= libutils libcutils libbinder liblog libcamera_client libhardware
 LOCAL_SHARED_LIBRARIES+= libs3cjpeg
 
-LOCAL_MODULE := camera.transform
+LOCAL_MODULE := camera.intercept
 
 LOCAL_MODULE_TAGS := optional
 
-ifdef BOARD_SECOND_CAMERA_DEVICE
-    LOCAL_CFLAGS += -DFFC_PRESENT
-endif
+#ifdef BOARD_SECOND_CAMERA_DEVICE
+#    LOCAL_CFLAGS += -DFFC_PRESENT
+#endif
 
 ifeq ($(TARGET_DEVICE),transform)
     LOCAL_CFLAGS += -DHAVE_FLASH

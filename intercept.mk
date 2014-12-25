@@ -18,7 +18,7 @@
 # of hardware-specific resource overrides, typically the frameworks and
 # application settings that are stored in resourced.
 
-DEVICE_PACKAGE_OVERLAYS := device/samsung/transform/overlay
+DEVICE_PACKAGE_OVERLAYS := device/samsung/intercept/overlay
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
@@ -53,12 +53,12 @@ PRODUCT_PACKAGES += \
 	bdaddr_read \
 	libsecgps.so \
 	libsec-ril40.so \
-	gralloc.transform \
-	sensors.transform \
-	lights.transform \
+	gralloc.intercept \
+	sensors.intercept \
+	lights.intercept \
 	hwcomposer.default \
 	libGLES_fimg \
-	pppd_runner
+	pppd_runner \
 	
 
 # These are the hardware-specific features
@@ -108,8 +108,8 @@ PRODUCT_COPY_FILES += \
 
 # VOLD
 PRODUCT_COPY_FILES += \
-	device/samsung/transform/prebuilt/vold/vold.fstab:system/etc/vold.fstab \
-	device/samsung/transform/prebuilt/vold/vold:system/bin/vold
+	device/samsung/intercept/prebuilt/vold/vold.fstab:system/etc/vold.fstab \
+	device/samsung/intercept/prebuilt/vold/vold:system/bin/vold
 		
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/lib/modules
@@ -162,7 +162,7 @@ PRODUCT_COPY_FILES += \
 
 # kernel modules
 #PRODUCT_COPY_FILES += $(foreach module,\
-#	$(wildcard device/samsung/transform/*.ko),\
+#	$(wildcard device/samsung/intercept/*.ko),\
 #	$(module):system/lib/modules/$(notdir $(module)))
 
 # See comment at the top of this file. This is where the other

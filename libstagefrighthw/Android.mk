@@ -1,4 +1,4 @@
-ifeq ($(TARGET_DEVICE),transform)
+ifeq ($(TARGET_DEVICE),intercept)
 
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
